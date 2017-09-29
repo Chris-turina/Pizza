@@ -17,6 +17,7 @@ Pizza.prototype.Cost = function () {
 // User Interface
 $(document).ready(function() {
   $('select').material_select();
+  $('.parallax').parallax();
   $("form#pizza").submit(function(event) {
     event.preventDefault()
     var pizzaSize = parseInt($("input[type='radio'][name='pizza-size']:checked").val());
