@@ -12,59 +12,73 @@
     <title>Pizza Order</title>
   </head>
   <body>
-    <div class="container">
-      <h1>"Order Pizza"</h1>
+    <div class="container z-depth-5">
+      <nav>
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo center">Order Pizza</a>
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">JavaScript</a></li>
+          </ul>
+        </div>
+      </nav>
       <div class="row">
-        <h3>Please select a size:</h3>
-        <form id="pizza">
-          <p>
-            <input id="small" name="pizza-size" type="radio" value="10"  />
-            <label for="small">Small</label>
-          </p>
-          <p>
-            <input id="medium" name="pizza-size" type="radio" value="15"  />
-            <label for="medium">Medium</label>
-          </p>
-          <p>
-            <input id="large" name="pizza-size" type="radio" value="20"  />
-            <label for="large">Large</label>
-          </p>
-          <p>
-            <input id="extra-large" name="pizza-size" type="radio" value="25"  />
-            <label for="extra-large">Xtra-Large</label>
-          </p>
+        <div class="col-lg-6">
 
-          <h2>Select the Type of Pizza You would like:</h2>
-          <!-- Switch -->
-          <div class="switch">
-            <label>
-              Off
-              <input name="toppings" type="checkbox" value="1">
-              <span class="lever"></span>
-              On
-            </label>
-          </div>
-          <div class="switch">
-            <label>
-              Off
-              <input name="toppings" type="checkbox" value="1">
-              <span class="lever"></span>
-              On
-            </label>
-          </div>
 
-          <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-            <i class="material-icons right">send</i>
-          </button>
 
-        </form>
+      <h4>Pizza Size:</h4>
+      <form id="pizza">
+        <p>
+          <input id="small" name="pizza-size" type="radio" value="10"  />
+          <label for="small">Small</label>
+        </p>
+        <p>
+          <input id="medium" name="pizza-size" type="radio" value="15"  />
+          <label for="medium">Medium</label>
+        </p>
+        <p>
+          <input id="large" name="pizza-size" type="radio" value="20"  />
+          <label for="large">Large</label>
+        </p>
+        <p>
+          <input id="extra-large" name="pizza-size" type="radio" value="25"  />
+          <label for="extra-large">Xtra-Large</label>
+        </p>
+        </div>
+        <div class="col-lg-6">
+        <h4>Type of Pizza:</h4>
+
+        </div>
+        </div>
+        <!-- Switch -->
+        <div class="switch">
+          <label>
+            No
+            <input name="toppings" type="checkbox" value="1">
+            <span class="lever"></span>
+            Pepperoni
+          </label>
+        </div>
+        <div class="switch">
+          <label>
+            Off
+            <input name="toppings" type="checkbox" value="1">
+            <span class="lever"></span>
+            On
+          </label>
+        </div>
+
+        <button type="submit" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">done</i></button>
+
+      </form>
 
         <h3>Your Order is:</h3>
         <p id="order-total"></p>
 
       </div>
 
-    </div>
 
   </body>
 </html>
