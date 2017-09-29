@@ -13,7 +13,7 @@
   </head>
   <body>
     <div class="header">
-      <h1>Block 150</h1>
+      <h1>Block 33 </h1>
       <p class="head"><em>Best Pizza on the Block</em></p>
     </div>
     <div class="parallax-container">
@@ -39,23 +39,23 @@
                 <h5>Select a Size:</h5>
                 <p>
                   <input id="personal" name="pizza-size" type="radio" value="4" checked />
-                  <label for="personal">Personal</label>
+                  <label for="personal">Personal $4</label>
                 </p>
                 <p>
                   <input id="small" name="pizza-size" type="radio" value="8"  />
-                  <label for="small">Small</label>
+                  <label for="small">Small $8</label>
                 </p>
                 <p>
                   <input id="medium" name="pizza-size" type="radio" value="13"  />
-                  <label for="medium">Medium</label>
+                  <label for="medium">Medium $13</label>
                 </p>
                 <p>
                   <input id="large" name="pizza-size" type="radio" value="18"  />
-                  <label for="large">Large</label>
+                  <label for="large">Large $18</label>
                 </p>
                 <p>
                   <input id="extra-large" name="pizza-size" type="radio" value="24"  />
-                  <label for="extra-large">Xtra-Large</label>
+                  <label for="extra-large">Xtra-Large $24</label>
                 </p>
               </div>
             </div>
@@ -69,30 +69,30 @@
               </div>
               <div class="card-content">
                 <h5>Select Type:</h5>
-                <p><em>To create a custom Pizza Select Chesse and the toppings you would like on it from below.</em> </p>
+                <p><em>To create a custom Pizza Select Chesse.  Then selectthe toppings you would like on it from below.</em> </p>
                   <p>
-                    <input id="chesse" name="pizza-type" type="radio" value="1" checked />
+                    <input id="chesse" name="pizza-type" type="radio" value="0" checked />
                     <label for="chesse">Chesse</label>
                   </p>
                   <p>
                     <input id="pepperoni" name="pizza-type" type="radio" value="3"  />
-                    <label for="pepperoni">Pepperoni</label>
+                    <label for="pepperoni">Pepperoni $3</label>
                   </p>
                   <p>
                     <input id="hawaiian" name="pizza-type" type="radio" value="3"  />
-                    <label for="hawaiian">Hawaiian</label>
+                    <label for="hawaiian">Hawaiian $3</label>
                   </p>
                   <p>
                     <input id="margarita" name="pizza-type" type="radio" value="2"  />
-                    <label for="margarita">Margarita</label>
+                    <label for="margarita">Margarita $2</label>
                   </p>
                   <p>
                     <input id="meat" name="pizza-type" type="radio" value="5"  />
-                    <label for="meat">Meat</label>
+                    <label for="meat">Meat $5</label>
                   </p>
                   <p>
                     <input id="combo" name="pizza-type" type="radio" value="5"  />
-                    <label for="combo">Combo</label>
+                    <label for="combo">Combo $5</label>
                   </p>
               </div>
             </div>
@@ -254,11 +254,15 @@
 
           <button id="button" type="submit" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">done</i></button>
 
+          <button id="refresh" type="button" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">refresh</i></button>
+
       </form>
 
 
+
+
       <div class="head">
-        <h3>Your Order is:</h3>
+        <h3>Your Order costs:</h3>
         <ul id="order-total"></ul>
       </div>
 

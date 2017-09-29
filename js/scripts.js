@@ -14,6 +14,7 @@ Pizza.prototype.Cost = function () {
 
 
 
+
 // User Interface
 $(document).ready(function() {
   $('select').material_select();
@@ -26,8 +27,9 @@ $(document).ready(function() {
     $.each($("input[name='toppings']:checked"), function() {
       pizzaPrice.toppings.push($(this).val());
     })
-  var orderTotal = pizzaPrice.Cost();
-  // $("#order-total").append("<li>" +"$" + orderTotal + "</li>");
-  $("#order-total").append("<li>" +"$" + orderTotal + pizzaName +  "</li>");
+  $("#order-total").append("<li>" +"$" + pizzaPrice.Cost() + "</li>");
+  $("#refresh").click(function() {
+    location.reload();
+  });
   });
 });
