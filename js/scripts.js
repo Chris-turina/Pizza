@@ -27,6 +27,7 @@ $(document).ready(function() {
       pizzaPrice.toppings.push($(this).val());
     })
   var orderTotal = pizzaPrice.Cost();
-  $("#order-total").text("$" + orderTotal);
+  // $("#order-total").append("<li>" +"$" + orderTotal + "</li>");
+  $("#order-total").append("<li>" +"$" + orderTotal + pizzaName +  "</li>");
   });
 });
