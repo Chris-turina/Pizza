@@ -31,12 +31,10 @@ body {
 #row {
   display: block;
 }
-.col-lg-4 {
+.col-lg-3 {
   color: white;
 }
 
-.row {
-  color: black;
 }
 #toppings {
   color: white;
@@ -50,5 +48,5 @@ button {
 }
 
 #order-total {
-
+  font-size: 30px
 }
