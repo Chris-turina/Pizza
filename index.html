@@ -18,27 +18,49 @@
         <h3>Please select a size:</h3>
         <form id="pizza">
           <p>
-            <input name="group1" type="radio" id="small" />
-            <label for="test1">Small</label>
+            <input id="small" name="pizza-size" type="radio" value="10"  />
+            <label for="small">Small</label>
           </p>
           <p>
-            <input name="group1" type="radio" id="medium" />
-            <label for="test2">Medium</label>
+            <input id="medium" name="pizza-size" type="radio" value="15"  />
+            <label for="medium">Medium</label>
           </p>
           <p>
-            <input class="with-gap" name="group1" type="radio" id="large"  />
-            <label for="test3">Large</label>
+            <input id="large" name="pizza-size" type="radio" value="20"  />
+            <label for="large">Large</label>
           </p>
           <p>
-            <input name="group1" type="radio" id="extra-large" disabled="disabled" />
-            <label for="test4">Xtra-Large</label>
+            <input id="extra-large" name="pizza-size" type="radio" value="25"  />
+            <label for="extra-large">Xtra-Large</label>
           </p>
 
           <h2>Select the Type of Pizza You would like:</h2>
-          
-        </form>
+          <!-- Switch -->
+          <div class="switch">
+            <label>
+              Off
+              <input name="toppings" type="checkbox" value="1">
+              <span class="lever"></span>
+              On
+            </label>
+          </div>
+          <div class="switch">
+            <label>
+              Off
+              <input name="toppings" type="checkbox" value="1">
+              <span class="lever"></span>
+              On
+            </label>
+          </div>
+
+          <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+            <i class="material-icons right">send</i>
+          </button>
 
         </form>
+
+        <h3>Your Order is:</h3>
+        <p id="order-total"></p>
 
       </div>
 
