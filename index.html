@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <!-- <link href="css/bootstrap.css" type="text/css" rel="stylesheet"> -->
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
     <link href="css/materialize.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/styles.css" type="text/css" rel="stylesheet">
@@ -12,11 +12,15 @@
     <title>Pizza Order</title>
   </head>
   <body>
+    <div class="header">
+      <h1>Block 150</h1>
+      <p class="head"><em>Best Pizza on the Block</em></p>
+    </div>
     <div class="parallax-container">
-      <div class="parallax"><img src="img/background2.jpg"></div>
+      <div class="parallax"><img src="img/background3.jpg"></div>
       </div>
-    <div class="color">
-    <div class="container">
+
+    <!-- <div class="container"> -->
       <nav>
         <div class="nav-wrapper">
           <a href="#" class="brand-logo center">Order Pizza</a>
@@ -70,6 +74,7 @@
               </div>
               <div class="card-content">
                 <h5>Select Type:</h5>
+                <p><em>To create a custom Pizza Select Chesse and the toppings you would like on it from below.</em> </p>
                   <p>
                     <input id="chesse" name="pizza-type" type="radio" value="1" checked />
                     <label for="chesse">Chesse</label>
@@ -99,45 +104,132 @@
           </div>
         </div>
 
-        <div class="row">
-          <div class="col s12 m6">
-            <div class="card">
-              <div class="card-image">
-                <img src="img/toppings.jpg">
+        <div class="parallax-container">
+          <div class="parallax"><img src="img/background2.jpg"></div>
+          </div>
+
+          <!--Toppings-->
+          <div class="header">
+            <h4>Toppings</h4>
+            <p class="head">Select any extra toppings you would like.</p>
+            <p class="head"><strong>1$ per topping</strong></p>
+          </div>
+          <div id="row" class"row">
+            <div class="col-lg-4">
+            <h5>Select Meat Toppings:</h5>
+            <div class="switch">
+              <label>
+                No
+                <input name="toppings" type="checkbox" value="1">
+                <span class="lever"></span>
+                Pepperoni
+              </label>
+            </div>
+            <div class="switch">
+              <label>
+                No
+                <input name="toppings" type="checkbox" value="1">
+                <span class="lever"></span>
+                Beef
+              </label>
+            </div>
+            <div class="switch">
+              <label>
+                No
+                <input name="toppings" type="checkbox" value="1">
+                <span class="lever"></span>
+                Ham
+              </label>
+            </div>
+            <div class="switch">
+              <label>
+                No
+                <input name="toppings" type="checkbox" value="1">
+                <span class="lever"></span>
+                Salami
+              </label>
+            </div>
+            </div>
+            <div class="col-lg-4">
+              <h5>Select Meat Toppings:</h5>
+              <div class="switch">
+                <label>
+                  No
+                  <input name="toppings" type="checkbox" value="1">
+                  <span class="lever"></span>
+                  Pepperoni
+                </label>
               </div>
-              <div class="card-content">
-                <h5>Select Toppings:</h5>
-                <div class="switch">
-                  <label>
-                    No
-                    <input name="toppings" type="checkbox" value="1">
-                    <span class="lever"></span>
-                    Pepperoni
-                  </label>
-                </div>
-                <div class="switch">
-                  <label>
-                    No
-                    <input name="toppings" type="checkbox" value="1">
-                    <span class="lever"></span>
-                    On
-                  </label>
-                </div>
+              <div class="switch">
+                <label>
+                  No
+                  <input name="toppings" type="checkbox" value="1">
+                  <span class="lever"></span>
+                  Beef
+                </label>
+              </div>
+              <div class="switch">
+                <label>
+                  No
+                  <input name="toppings" type="checkbox" value="1">
+                  <span class="lever"></span>
+                  Ham
+                </label>
+              </div>
+              <div class="switch">
+                <label>
+                  No
+                  <input name="toppings" type="checkbox" value="1">
+                  <span class="lever"></span>
+                  Salami
+                </label>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <h5>Select Meat Toppings:</h5>
+              <div class="switch">
+                <label>
+                  No
+                  <input name="toppings" type="checkbox" value="1">
+                  <span class="lever"></span>
+                  Pepperoni
+                </label>
+              </div>
+              <div class="switch">
+                <label>
+                  No
+                  <input name="toppings" type="checkbox" value="1">
+                  <span class="lever"></span>
+                  Beef
+                </label>
+              </div>
+              <div class="switch">
+                <label>
+                  No
+                  <input name="toppings" type="checkbox" value="1">
+                  <span class="lever"></span>
+                  Ham
+                </label>
+              </div>
+              <div class="switch">
+                <label>
+                  No
+                  <input name="toppings" type="checkbox" value="1">
+                  <span class="lever"></span>
+                  Salami
+                </label>
               </div>
             </div>
           </div>
-        </div>
-        <!-- Switch -->
-
 
         <button type="submit" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">done</i></button>
 
       </form>
 
-        <h3>Your Order is:</h3>
-        <p id="order-total"></p>
+      <h3>Your Order is:</h3>
+      <p id="order-total"></p>
 
-    </div>
+      <!-- </div> -->
     </div>
     <div class="parallax-container">
       <div class="parallax"><img src="img/background1.jpg"></div>

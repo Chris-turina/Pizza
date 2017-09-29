@@ -1,7 +1,40 @@
+body {
+  background-color: black;
+}
+
+.header {
+  text-align: center;
+  background-color: black;
+  color: white;
+  border-top: 20px solid white;
+  border-bottom: 20px solid white;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.head {
+  text-align: center;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.nav-wrapper {
+  background-color: black;
+}
+
 .parallax-container {
     height: 600px;
   }
 
-.color {
-  background-color: white;
+#row {
+  display: block;
+}
+
+.row {
+  color: black;
+}
+#toppings {
+  color: white;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
 }
