@@ -11,14 +11,15 @@ Pizza.prototype.Cost = function () {
 
 };
 
-};
+
 
 // User Interface
 $(document).ready(function() {
   $('select').material_select();
   $("form#pizza").submit(function(event) {
+    event.preventDefault()
     var pizzaSize = parseInt($("input[type='radio'][name='pizza-size']:checked").val());
-    var newPizza = new Pizza(sizeOption);
+    var newPizza = new Pizza(pizzaSize);
     $.each($("input[name='toppings']:checked"), function() {
       newPizza.toppings.push($(this).val());
     })
