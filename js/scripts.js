@@ -1,12 +1,13 @@
 // Pizza Constructor and Methods
-function Pizza(size) {
+function Pizza(size, type) {
   this.size = size;
+  this.type = type;
   this.toppings = [];
 }
 
 Pizza.prototype.Cost = function () {
-  var toppingsAdded = this.toppings.length * 2;
-  var total = this.size + toppingsAdded;
+  var toppingsAdded = this.toppings.length;
+  var total = this.size + toppingsAdded + this.type;
   return total;
 
 };
@@ -19,11 +20,12 @@ $(document).ready(function() {
   $("form#pizza").submit(function(event) {
     event.preventDefault()
     var pizzaSize = parseInt($("input[type='radio'][name='pizza-size']:checked").val());
-    var newPizza = new Pizza(pizzaSize);
+    var pizzaType = parseInt($("input[type='radio'][name='pizza-type']:checked").val());
+    var pizzaPrice = new Pizza(pizzaSize, pizzaType);
     $.each($("input[name='toppings']:checked"), function() {
-      newPizza.toppings.push($(this).val());
+      pizzaPrice.toppings.push($(this).val());
     })
-  var orderTotal = newPizza.Cost();
+  var orderTotal = pizzaPrice.Cost();
   $("#order-total").text(orderTotal);
   });
 });
